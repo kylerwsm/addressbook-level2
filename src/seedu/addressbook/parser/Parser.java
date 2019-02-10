@@ -125,16 +125,6 @@ public class Parser {
     }
 
     /**
-     * Parses arguments in the context of the delete person command.
-     *
-     * @param args the number of persons to be added in string.
-     * @return the prepared command.
-     */
-    private Command prepareAddMultiple(String args) {
-        return new AddMultipleCommand(Integer.parseInt(args));
-    }
-
-    /**
      * Returns true if the private prefix is present for a contact detail in the add command's arguments string.
      */
     private static boolean isPrivatePrefixPresent(String matchedPrefix) {
